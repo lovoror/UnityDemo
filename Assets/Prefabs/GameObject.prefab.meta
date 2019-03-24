@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: 1e86ba3e0ae30bf4f9722ff4f9cad23e
+guid: e44d8a071a9c8524c9543401ea0ee9fc
 PrefabImporter:
   externalObjects: {}
   userData: 
-  assetBundleName: assets/prefabs/text
+  assetBundleName: assets/prefabs/gameobject
   assetBundleVariant: bytes

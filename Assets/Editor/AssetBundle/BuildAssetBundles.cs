@@ -9,18 +9,44 @@ public class BuildAssetBundles
     public static void BuildAsset()
     {
         AssetDatabase.RemoveUnusedAssetBundleNames();
-        var path = Application.dataPath + "/../output";
-        if (!Directory.Exists(path))
+        var outputPath = Application.dataPath + "/../output";
+        if (!Directory.Exists(outputPath))
         {
-            Directory.CreateDirectory(path);
+            Directory.CreateDirectory(outputPath);
         }
-        var buildPath = "Assets/Prefabs";
-        if (!Directory.Exists(buildPath))
+        string[] buildPaths = { "Assets/Prefabs", "Assets/Texture" };
+        foreach(var buildPath in buildPaths)
         {
-            Debug.LogError("no found build path");
-            return;
+            if (!Directory.Exists(buildPath))
+            {
+                Debug.LogError("no found build path");
+                return;
+            }
+            var dicInfo = new DirectoryInfo(buildPath);
+            var files = dicInfo.GetFiles();
+            foreach (var file in files)
+            {
+                if (file.Extension == ".meta")
+                {
+                    continue;
+                }
+                var index = file.FullName.IndexOf("Assets");
+                var path = file.FullName.Substring(index);
+                var importer = AssetImporter.GetAtPath(path);
+                if (importer != null)
+                {
+                    var end = path.LastIndexOf(".");
+                    var name = path.Substring(0, end);
+                    importer.assetBundleName = name;
+                    importer.assetBundleVariant = "bytes";
+                }
+                else
+                {
+                    Debug.LogErrorFormat("asset {0} is null", path);
+                }
+            }
         }
-        BuildPipeline.BuildAssetBundles(path, BuildAssetBundleOptions.None, BuildTarget.Android);
+        BuildPipeline.BuildAssetBundles(outputPath, BuildAssetBundleOptions.None, BuildTarget.Android);
     }
     public void FindAsset()
     {
