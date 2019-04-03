@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 4212317032
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: aa41998bdbd086350c2a2b30dc3a57db
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3bc13a16558be0b817f0808a024605b2
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Prefabs/GameObject.prefab
+Dependencies:
+- C:/18.191.158.223/UnityDemo/Assets/StreamingAssets/assets/prefabs/image.bytes
+- C:/18.191.158.223/UnityDemo/Assets/StreamingAssets/assets/texture/1 .bytes
+- C:/18.191.158.223/UnityDemo/Assets/StreamingAssets/assets/texture/2.bytes

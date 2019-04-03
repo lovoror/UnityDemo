@@ -1,0 +1,37 @@
+ManifestFileVersion: 0
+CRC: 3375911049
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: assets/prefabs/image (2).bytes
+      Dependencies:
+        Dependency_0: assets/texture/3.bytes
+    Info_1:
+      Name: assets/prefabs/image (3).bytes
+      Dependencies:
+        Dependency_0: assets/texture/4.bytes
+    Info_2:
+      Name: assets/prefabs/image.bytes
+      Dependencies:
+        Dependency_0: assets/texture/1 .bytes
+    Info_3:
+      Name: assets/prefabs/text.bytes
+      Dependencies: {}
+    Info_4:
+      Name: assets/texture/1 .bytes
+      Dependencies: {}
+    Info_5:
+      Name: assets/texture/2.bytes
+      Dependencies: {}
+    Info_6:
+      Name: assets/texture/3.bytes
+      Dependencies: {}
+    Info_7:
+      Name: assets/texture/4.bytes
+      Dependencies: {}
+    Info_8:
+      Name: assets/prefabs/gameobject.bytes
+      Dependencies:
+        Dependency_0: assets/prefabs/image.bytes
+        Dependency_1: assets/texture/1 .bytes
+        Dependency_2: assets/texture/2.bytes

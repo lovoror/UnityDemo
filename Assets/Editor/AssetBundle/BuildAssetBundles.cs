@@ -9,7 +9,7 @@ public class BuildAssetBundles
     public static void BuildAsset()
     {
         AssetDatabase.RemoveUnusedAssetBundleNames();
-        var outputPath = Application.dataPath + "/../output";
+        var outputPath = Application.streamingAssetsPath;
         if (!Directory.Exists(outputPath))
         {
             Directory.CreateDirectory(outputPath);
@@ -47,6 +47,7 @@ public class BuildAssetBundles
             }
         }
         BuildPipeline.BuildAssetBundles(outputPath, BuildAssetBundleOptions.None, BuildTarget.Android);
+        AssetDatabase.Refresh();
     }
     public void FindAsset()
     {
