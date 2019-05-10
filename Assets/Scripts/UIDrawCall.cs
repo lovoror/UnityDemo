@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class UIDrawCall : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    const int geomSize = 1000;
+    public static List<Vector3> verts = new List<Vector3>(geomSize);
+    public Material mMaterial;
+    public Texture mTexture;
+    public Shader mShader;
+    Mesh mMesh;
+    MeshFilter mMeshFilter;
+    public MeshRenderer mRenderer;
+    
+    public void UpdateGeometry()
     {
-        
+        if (mMesh == null)
+        {
+            mMesh = new Mesh
+            {
+                hideFlags = HideFlags.DontSave,
+                name = (mMaterial != null)?"[NGUI]" + mMaterial.name : "[NGUI] Mesh"
+            };
+            mMesh.MarkDynamic();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

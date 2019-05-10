@@ -1,0 +1,35 @@
+ManifestFileVersion: 0
+CRC: 2221054844
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: fe8ee7de7dc8ba049b0eba3985e28e76
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 798811b7255c82b34a9f8780c2ce846a
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+Assets:
+- Assets/LoxodonFramework/BundleExamples/Encrypted/Tanks/Models/Tank.fbx
+- Assets/LoxodonFramework/BundleExamples/Encrypted/Tanks/Models/Materials/TankColour.mat
+- Assets/LoxodonFramework/BundleExamples/Encrypted/Tanks/Models/Materials/TankLights.mat
+- Assets/LoxodonFramework/BundleExamples/Encrypted/Tanks/Models/Terrain.fbx
+- Assets/LoxodonFramework/BundleExamples/Encrypted/Tanks/Models/Materials/TankGrey.mat
+- Assets/LoxodonFramework/BundleExamples/Encrypted/Tanks/Models/Materials/Terrain.mat
+- Assets/LoxodonFramework/BundleExamples/Encrypted/Tanks/Models/Materials/Light.mat
+- Assets/LoxodonFramework/BundleExamples/Encrypted/Tanks/Models/Materials/YellowLight.mat
+Dependencies: []

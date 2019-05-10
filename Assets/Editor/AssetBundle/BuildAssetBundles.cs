@@ -14,15 +14,15 @@ public class BuildAssetBundles
         {
             Directory.CreateDirectory(outputPath);
         }
-        string[] buildPaths = { "Assets/Prefabs", "Assets/Texture" };
+        string[] buildPaths = { "Prefabs", "Texture", "Models" };
         foreach(var buildPath in buildPaths)
         {
-            if (!Directory.Exists(buildPath))
+            if (!Directory.Exists("Assets\\"+buildPath))
             {
                 Debug.LogError("no found build path");
                 return;
             }
-            var dicInfo = new DirectoryInfo(buildPath);
+            var dicInfo = new DirectoryInfo("Assets\\" + buildPath);
             var files = dicInfo.GetFiles();
             foreach (var file in files)
             {

@@ -1,37 +1,114 @@
 ManifestFileVersion: 0
-CRC: 3375911049
+CRC: 3350721884
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: assets/prefabs/image (2).bytes
-      Dependencies:
-        Dependency_0: assets/texture/3.bytes
+      Name: assets/texture/2.bytes
+      Dependencies: {}
     Info_1:
-      Name: assets/prefabs/image (3).bytes
-      Dependencies:
-        Dependency_0: assets/texture/4.bytes
+      Name: assets/texture/1 .bytes
+      Dependencies: {}
     Info_2:
-      Name: assets/prefabs/image.bytes
-      Dependencies:
-        Dependency_0: assets/texture/1 .bytes
+      Name: assets/prefabs/image (2).bytes
+      Dependencies: {}
     Info_3:
       Name: assets/prefabs/text.bytes
       Dependencies: {}
     Info_4:
-      Name: assets/texture/1 .bytes
-      Dependencies: {}
+      Name: assets/prefabs/image.bytes
+      Dependencies:
+        Dependency_0: assets/texture/1 .bytes
     Info_5:
-      Name: assets/texture/2.bytes
+      Name: assets/prefabs/image (3).bytes
       Dependencies: {}
     Info_6:
-      Name: assets/texture/3.bytes
-      Dependencies: {}
-    Info_7:
-      Name: assets/texture/4.bytes
-      Dependencies: {}
-    Info_8:
       Name: assets/prefabs/gameobject.bytes
       Dependencies:
-        Dependency_0: assets/prefabs/image.bytes
-        Dependency_1: assets/texture/1 .bytes
-        Dependency_2: assets/texture/2.bytes
+        Dependency_0: assets/texture/1 .bytes
+        Dependency_1: assets/prefabs/image.bytes
+    Info_7:
+      Name: models/green
+      Dependencies: {}
+    Info_8:
+      Name: models/plane
+      Dependencies: {}
+    Info_9:
+      Name: models/red
+      Dependencies: {}
+    Info_10:
+      Name: maps/variants/variantscene
+      Dependencies:
+        Dependency_0: maps/variants/assets.hd
+    Info_11:
+      Name: maps/sample/samplescene
+      Dependencies: {}
+    Info_12:
+      Name: maps/variants/assets.hd
+      Dependencies: {}
+    Info_13:
+      Name: encrypted/tanks/models
+      Dependencies: {}
+    Info_14:
+      Name: maps/variants/assets.sd
+      Dependencies: {}
+    Info_15:
+      Name: encrypted/tanks/prefabs
+      Dependencies:
+        Dependency_0: encrypted/tanks/models
+    Info_16:
+      Name: "assets/texture/3 - \u526F\u672C (0).bytes"
+      Dependencies: {}
+    Info_17:
+      Name: "assets/texture/3 - \u526F\u672C (1).bytes"
+      Dependencies: {}
+    Info_18:
+      Name: "assets/texture/3 - \u526F\u672C (10).bytes"
+      Dependencies: {}
+    Info_19:
+      Name: "assets/texture/3 - \u526F\u672C (11).bytes"
+      Dependencies: {}
+    Info_20:
+      Name: "assets/texture/3 - \u526F\u672C (12).bytes"
+      Dependencies: {}
+    Info_21:
+      Name: "assets/texture/3 - \u526F\u672C (13).bytes"
+      Dependencies: {}
+    Info_22:
+      Name: "assets/texture/3 - \u526F\u672C (14).bytes"
+      Dependencies: {}
+    Info_23:
+      Name: "assets/texture/3 - \u526F\u672C (15).bytes"
+      Dependencies: {}
+    Info_24:
+      Name: "assets/texture/3 - \u526F\u672C (2).bytes"
+      Dependencies: {}
+    Info_25:
+      Name: "assets/texture/3 - \u526F\u672C (3).bytes"
+      Dependencies: {}
+    Info_26:
+      Name: "assets/texture/3 - \u526F\u672C (4).bytes"
+      Dependencies: {}
+    Info_27:
+      Name: "assets/texture/3 - \u526F\u672C (5).bytes"
+      Dependencies: {}
+    Info_28:
+      Name: "assets/texture/3 - \u526F\u672C (6).bytes"
+      Dependencies: {}
+    Info_29:
+      Name: "assets/texture/3 - \u526F\u672C (7).bytes"
+      Dependencies: {}
+    Info_30:
+      Name: "assets/texture/3 - \u526F\u672C (8).bytes"
+      Dependencies: {}
+    Info_31:
+      Name: "assets/texture/3 - \u526F\u672C (9).bytes"
+      Dependencies: {}
+    Info_32:
+      Name: assets/texture/main_rocker_bg.bytes
+      Dependencies: {}
+    Info_33:
+      Name: assets/texture/main_rocker_fore.bytes
+      Dependencies: {}
+    Info_34:
+      Name: assets/models/face.bytes
+      Dependencies: {}

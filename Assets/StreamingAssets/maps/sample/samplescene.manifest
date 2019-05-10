@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 1299970253
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0d3dd5dd8ea05ee5c104d97fcae9979d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 56fdb730f9e340cb2ab6be08a299f5c3
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 92
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 124
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 258
+  Script: {instanceID: 0}
+Assets:
+- Assets/LoxodonFramework/BundleExamples/Maps/Sample/SampleScene.unity
+Dependencies: []

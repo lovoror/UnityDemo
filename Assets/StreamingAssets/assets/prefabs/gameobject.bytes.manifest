@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 4212317032
+CRC: 990529855
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: aa41998bdbd086350c2a2b30dc3a57db
+    Hash: b10bda73b41fb4fa82957f5100789463
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 3bc13a16558be0b817f0808a024605b2
+    Hash: f1889ff07cd2d6d81066602dd6eaa16b
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -26,6 +26,5 @@ ClassTypes:
 Assets:
 - Assets/Prefabs/GameObject.prefab
 Dependencies:
-- C:/18.191.158.223/UnityDemo/Assets/StreamingAssets/assets/prefabs/image.bytes
-- C:/18.191.158.223/UnityDemo/Assets/StreamingAssets/assets/texture/1 .bytes
-- C:/18.191.158.223/UnityDemo/Assets/StreamingAssets/assets/texture/2.bytes
+- E:/18.191.158.223/UnityDemo/Assets/StreamingAssets/assets/texture/1 .bytes
+- E:/18.191.158.223/UnityDemo/Assets/StreamingAssets/assets/prefabs/image.bytes

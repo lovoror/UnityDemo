@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 848869558
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9108e7b278cd6c1bf30f79956e66c5be
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f073edb454177d7ec8680f16e1b75c42
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+Assets:
+- Assets/LoxodonFramework/BundleExamples/Models/Plane/Materials/Plane.mat
+- Assets/LoxodonFramework/BundleExamples/Models/Plane/Plane.prefab
+Dependencies: []
