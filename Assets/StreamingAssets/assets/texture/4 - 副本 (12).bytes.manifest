@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2281492919
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6854430dca432597e9cd198bd83beafd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f19fbf085e00d23fbc8d6cf7b345590b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- "Assets/Texture/4 - \u526F\u672C (12).png"
+Dependencies: []

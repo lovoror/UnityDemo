@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3088696524
+CRC: 635136192
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 37fc1b7c8d5db001868847964848e4d7
+    Hash: 591e4ff997451cf2f623422d3074d49c
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2c741a59cff4c34c27e0ae4513a21d7f
@@ -24,4 +24,4 @@ ClassTypes:
 Assets:
 - Assets/Prefabs/Image.prefab
 Dependencies:
-- E:/18.191.158.223/UnityDemo/Assets/StreamingAssets/assets/texture/1 .bytes
+- D:/UnityDemo/Assets/StreamingAssets/assets/texture/1 .bytes

@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 2434559058
+CRC: 3963357229
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -112,3 +112,51 @@ AssetBundleManifest:
       Dependencies:
         Dependency_0: assets/texture/1 .bytes
         Dependency_1: assets/prefabs/image.bytes
+    Info_35:
+      Name: "assets/texture/4 - \u526F\u672C (0).bytes"
+      Dependencies: {}
+    Info_36:
+      Name: "assets/texture/4 - \u526F\u672C (1).bytes"
+      Dependencies: {}
+    Info_37:
+      Name: "assets/texture/4 - \u526F\u672C (10).bytes"
+      Dependencies: {}
+    Info_38:
+      Name: "assets/texture/4 - \u526F\u672C (11).bytes"
+      Dependencies: {}
+    Info_39:
+      Name: "assets/texture/4 - \u526F\u672C (12).bytes"
+      Dependencies: {}
+    Info_40:
+      Name: "assets/texture/4 - \u526F\u672C (13).bytes"
+      Dependencies: {}
+    Info_41:
+      Name: "assets/texture/4 - \u526F\u672C (14).bytes"
+      Dependencies: {}
+    Info_42:
+      Name: "assets/texture/4 - \u526F\u672C (15).bytes"
+      Dependencies: {}
+    Info_43:
+      Name: "assets/texture/4 - \u526F\u672C (2).bytes"
+      Dependencies: {}
+    Info_44:
+      Name: "assets/texture/4 - \u526F\u672C (3).bytes"
+      Dependencies: {}
+    Info_45:
+      Name: "assets/texture/4 - \u526F\u672C (4).bytes"
+      Dependencies: {}
+    Info_46:
+      Name: "assets/texture/4 - \u526F\u672C (5).bytes"
+      Dependencies: {}
+    Info_47:
+      Name: "assets/texture/4 - \u526F\u672C (6).bytes"
+      Dependencies: {}
+    Info_48:
+      Name: "assets/texture/4 - \u526F\u672C (7).bytes"
+      Dependencies: {}
+    Info_49:
+      Name: "assets/texture/4 - \u526F\u672C (8).bytes"
+      Dependencies: {}
+    Info_50:
+      Name: "assets/texture/4 - \u526F\u672C (9).bytes"
+      Dependencies: {}

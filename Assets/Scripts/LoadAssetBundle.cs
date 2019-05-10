@@ -10,6 +10,8 @@ public class LoadAssetBundle : MonoBehaviour
     public Transform m_Parent;
     public Text AsyncTime;
     public Text SyncTime;
+    public Text SyncWithYieldTime;
+    public InputField IndexText;
     static string m_Path;
     private StringBuilder m_StringBuilder = new StringBuilder(100);
     public void Awake()
@@ -66,7 +68,7 @@ public class LoadAssetBundle : MonoBehaviour
         float start = Time.realtimeSinceStartup;
         for (int i = 0; i < 16; i++)
         {
-            string filename = Application.streamingAssetsPath + "/assets/texture/" + "3 - 副本 (" + i.ToString() + ").bytes";
+            string filename = Application.streamingAssetsPath + "/assets/texture/" + IndexText.text + " - 副本 (" + i.ToString() + ").bytes";
             AssetBundle a = AssetBundle.LoadFromFile(filename);
             list.Add(a);
             Texture2D t = a.LoadAsset<Texture2D>(a.GetAllAssetNames()[0]);
@@ -83,6 +85,31 @@ public class LoadAssetBundle : MonoBehaviour
     {
         StartCoroutine(LoadAsyncWrap());
     }
+
+    public void LoadsyncWithLoadFromFile()
+    {
+        StartCoroutine(LoadSyncWrap());
+    }
+
+    IEnumerator LoadSyncWrap()
+    {
+        float a = Time.realtimeSinceStartup;
+        for (int i = 0; i < isloadover.Length; i++)
+        {
+            isloadover[i] = false;
+        }
+        for (int i = 0; i < 16; i++)
+        {
+            string filename = Application.streamingAssetsPath + "/assets/texture/" + IndexText.text + " - 副本 (" + i.ToString() + ").bytes";
+            StartCoroutine(LoadOneWithLoadFromFile(filename, i));
+        }
+        while (!Isallloadover())
+        {
+            yield return 1;
+        }
+        float b = Time.realtimeSinceStartup;
+        SyncWithYieldTime.text = "协程同步加载 Spend Time" + (b - a).ToString() + "s";
+    }
     bool[] isloadover = new bool[16];
     IEnumerator LoadAsyncWrap()
     {
@@ -93,7 +120,7 @@ public class LoadAssetBundle : MonoBehaviour
         }
         for (int i = 0; i < 16;i++)
         {
-            string filename = Application.streamingAssetsPath + "/assets/texture/" + "3 - 副本 (" + i.ToString() + ").bytes";
+            string filename = Application.streamingAssetsPath + "/assets/texture/" + IndexText.text + " - 副本 (" + i.ToString() + ").bytes";
             StartCoroutine(LoadOne(filename, i));
         }
         while (!Isallloadover())
@@ -120,5 +147,13 @@ public class LoadAssetBundle : MonoBehaviour
         yield return request;
         Texture2D t = request.assetBundle.LoadAsset<Texture2D>(request.assetBundle.GetAllAssetNames()[0]);
         isloadover[index] = true;
+    }
+
+    IEnumerator LoadOneWithLoadFromFile(string filename, int index)
+    {
+        AssetBundle a = AssetBundle.LoadFromFile(filename);
+        Texture2D t = a.LoadAsset<Texture2D>(a.GetAllAssetNames()[0]);
+        isloadover[index] = true;
+        yield break;
     }
 }

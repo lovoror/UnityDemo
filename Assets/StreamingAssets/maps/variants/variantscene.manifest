@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2585199947
+CRC: 1468775524
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 913d664a5be29d3712f8408f7c3b10a9
+    Hash: 8c424ffc1d7d89d7d83e40bab80084a4
   TypeTreeHash:
     serializedVersion: 2
     Hash: ccffd7bd301fd747f7e5bec32a59ef4a
@@ -52,4 +52,4 @@ ClassTypes:
 Assets:
 - Assets/LoxodonFramework/BundleExamples/Maps/Variants/VariantScene.unity
 Dependencies:
-- E:/18.191.158.223/UnityDemo/Assets/StreamingAssets/maps/variants/assets.hd
+- D:/UnityDemo/Assets/StreamingAssets/maps/variants/assets.hd

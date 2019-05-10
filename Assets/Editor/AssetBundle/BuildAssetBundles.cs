@@ -46,7 +46,7 @@ public class BuildAssetBundles
                 }
             }
         }
-        BuildPipeline.BuildAssetBundles(outputPath, BuildAssetBundleOptions.None, BuildTarget.Android);
+        BuildPipeline.BuildAssetBundles(outputPath, BuildAssetBundleOptions.None, BuildTarget.StandaloneWindows64);
         AssetDatabase.Refresh();
     }
     public void FindAsset()

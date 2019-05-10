@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2655251642
+CRC: 567744613
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: e1023984fc44fe2a33a9bc2b216a5276
+    Hash: ebad8386b1b867639ad48e2cb1d6c749
   TypeTreeHash:
     serializedVersion: 2
     Hash: ce00b96eb05100871f39954dc67941ec
@@ -25,4 +25,4 @@ Assets:
 - Assets/LoxodonFramework/BundleExamples/Encrypted/Tanks/Prefabs/Tank.prefab
 - Assets/LoxodonFramework/BundleExamples/Encrypted/Tanks/Prefabs/Terrain.prefab
 Dependencies:
-- E:/18.191.158.223/UnityDemo/Assets/StreamingAssets/encrypted/tanks/models
+- D:/UnityDemo/Assets/StreamingAssets/encrypted/tanks/models
