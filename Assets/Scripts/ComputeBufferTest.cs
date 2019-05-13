@@ -13,7 +13,7 @@ public class ComputeBufferTest : MonoBehaviour
         public float C;
     }
     // Start is called before the first frame update
-    void Start()
+    public void Test()
     {
         Data[] inputData = new Data[3];
         Data[] outputData = new Data[3];
@@ -23,7 +23,7 @@ public class ComputeBufferTest : MonoBehaviour
             inputData[i].A = i * 3 + 1;
             inputData[i].B = i * 3 + 2;
             inputData[i].C = i * 3 + 3;
-            Debug.LogFormat("inputData.A={0} inputData.B={1} inputData.C={2}",inputData[i].A, inputData[i].B,inputData[i].C);
+            ScreenLog.Log(string.Format("inputData.A={0} inputData.B={1} inputData.C={2}",inputData[i].A, inputData[i].B,inputData[i].C));
         }
         ComputeBuffer inputBuffer = new ComputeBuffer(outputData.Length, 12);
         ComputeBuffer outputBuffer = new ComputeBuffer(outputData.Length, 12);
@@ -39,7 +39,7 @@ public class ComputeBufferTest : MonoBehaviour
         outputBuffer.Dispose();
         for (int i = 0; i < outputData.Length; i++)
         {
-            Debug.LogFormat("outputData.A={0} outputData.B={1} outputData.C={2}", outputData[i].A, outputData[i].B, outputData[i].C);
+            ScreenLog.Log(string.Format("outputData.A={0} outputData.B={1} outputData.C={2}", outputData[i].A, outputData[i].B, outputData[i].C));
         }
     }
 
