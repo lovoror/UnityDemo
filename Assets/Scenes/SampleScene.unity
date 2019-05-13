@@ -378,6 +378,7 @@ MonoBehaviour:
   m_Parent: {fileID: 1125438149}
   AsyncTime: {fileID: 1647608113}
   SyncTime: {fileID: 50248278}
+  SyncWithYieldTime: {fileID: 0}
   IndexText: {fileID: 23695144}
 --- !u!1 &129394545
 GameObject:
@@ -6064,6 +6065,7 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6135,6 +6137,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 12.841001, y: 151.31601, z: -4.932}
+--- !u!114 &963194229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9bf7f6e908c6e3499d5595cd6e3cbe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 7200000, guid: 47e659439e99951429037553dbd4183c, type: 3}
 --- !u!1 &1009576508
 GameObject:
   m_ObjectHideFlags: 0

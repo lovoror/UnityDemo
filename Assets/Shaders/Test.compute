@@ -1,0 +1,17 @@
+﻿#pragma kernel CSMain
+struct Data {
+	float A;
+	float B;
+	float C;
+};
+
+StructuredBuffer<Data> inputData;
+RWStructuredBuffer<Data> outputData;
+
+[numthreads(12, 1, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+	outputData[id.x].A = inputData[id.x].A * 2;
+	outputData[id.x].B = inputData[id.x].B * 2;
+	outputData[id.x].C = inputData[id.x].C * 2;
+}
