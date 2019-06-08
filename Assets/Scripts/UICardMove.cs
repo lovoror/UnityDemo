@@ -229,13 +229,13 @@ public class UICardMove : MonoBehaviour
         }
         else
         {
-            SimpleLogger.ERROR("UI", "{0}", "没有找到UIPanel组件");
+            Debug.LogError("没有找到UIPanel组件");
         }
 
-        var curQuality = GameQualityManager.currentQuality;
-        if (curQuality >= GameQualityManager.Quality.high)
+        var curQuality = 1;
+        if (curQuality >= 3)
             currFocalArea = focalAreaHight;
-        else if (curQuality == GameQualityManager.Quality.middle)
+        else if (curQuality == 2)
             currFocalArea = focalAreaMid;
         else
             currFocalArea = focalAreaLow;
