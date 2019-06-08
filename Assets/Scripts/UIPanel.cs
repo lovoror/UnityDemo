@@ -1,76 +1,77 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class UIPanel : UIRect
+namespace MiniNGUI
 {
-    static public List<UIPanel> list = new List<UIPanel>();
-
-    [System.NonSerialized]
-    public List<UIDrawCall> drawCalls = new List<UIDrawCall>();
-
-    [HideInInspector] [SerializeField] int mDepth = 0;
-
-    // 从这里看出如果深度相同的两个panel是无法确定先后顺序的
-    static public int CompareFunc(UIPanel a, UIPanel b)
+    public class UIPanel : UIRect
     {
-        if (a != b && a != null && b != null)
+        static public List<UIPanel> list = new List<UIPanel>();
+
+        [System.NonSerialized]
+        public List<UIDrawCall> drawCalls = new List<UIDrawCall>();
+
+        [HideInInspector] [SerializeField] int mDepth = 0;
+
+        // 从这里看出如果深度相同的两个panel是无法确定先后顺序的
+        static public int CompareFunc(UIPanel a, UIPanel b)
         {
-            if (a.mDepth < b.mDepth) return -1;
-            if (a.mDepth > b.mDepth) return 1;
-            return (a.GetInstanceID() < b.GetInstanceID()) ? -1 : 1;
-        }
-        return 0;
-    }
-    static int mUpdateFrame = -1;
-    private void LateUpdate()
-    {
-        if (mUpdateFrame != Time.frameCount || !Application.isPlaying)
-        {
-            mUpdateFrame = Time.frameCount;
-            if (Application.isPlaying)
+            if (a != b && a != null && b != null)
             {
-                
+                if (a.mDepth < b.mDepth) return -1;
+                if (a.mDepth > b.mDepth) return 1;
+                return (a.GetInstanceID() < b.GetInstanceID()) ? -1 : 1;
+            }
+            return 0;
+        }
+        static int mUpdateFrame = -1;
+        private void LateUpdate()
+        {
+            if (mUpdateFrame != Time.frameCount || !Application.isPlaying)
+            {
+                mUpdateFrame = Time.frameCount;
+                if (Application.isPlaying)
+                {
+
+                }
             }
         }
     }
-}
 
-public class SharedList<T>
-{
-    class BufferInfo
+    public class SharedList<T>
     {
-        public int bufferSize;
-        public List<T[]> buffers;
-
-        public BufferInfo(int bufferSize_, int capacity_)
+        class BufferInfo
         {
-            bufferSize = bufferSize_;
-            buffers = new List<T[]>(capacity_);
-        }
+            public int bufferSize;
+            public List<T[]> buffers;
 
-        public T[] Get()
-        {
-            int count = buffers.Count;
-            if (count == 0)
+            public BufferInfo(int bufferSize_, int capacity_)
             {
-                return new T[bufferSize];
+                bufferSize = bufferSize_;
+                buffers = new List<T[]>(capacity_);
             }
-            var p = buffers[--count];
-            buffers.RemoveAt(count);
-            return p;
+
+            public T[] Get()
+            {
+                int count = buffers.Count;
+                if (count == 0)
+                {
+                    return new T[bufferSize];
+                }
+                var p = buffers[--count];
+                buffers.RemoveAt(count);
+                return p;
+            }
+
+            public void Put(T[] p)
+            {
+                buffers.Add(p);
+            }
         }
 
-        public void Put(T[] p)
+        const int cMinSize = 8;
+
+        static BufferInfo[] bufferInfos =
         {
-            buffers.Add(p);
-        }
-    }
-
-    const int cMinSize = 8;
-
-    static BufferInfo[] bufferInfos =
-    {
         new BufferInfo(4, 100),
         new BufferInfo(8, 100),
         new BufferInfo(16, 100),
@@ -79,86 +80,87 @@ public class SharedList<T>
         new BufferInfo(128, 20),
         new BufferInfo(256, 10),
     };
-    static List<SharedList<T>> lists = new List<SharedList<T>>(100);
+        static List<SharedList<T>> lists = new List<SharedList<T>>(100);
 
-    public static SharedList<T> GetList()
-    {
-        int count = lists.Count;
-        if (count == 0) return new SharedList<T>();
-
-        var p = lists[--count];
-        lists.RemoveAt(count);
-        return p;
-    }
-
-    public static void PutList(SharedList<T> p)
-    {
-        var data = p.data;
-        if (data != null)
+        public static SharedList<T> GetList()
         {
-            int c = p.size;
-            p.data = null;
-            p.size = 0;
-            PutBuffer(data, c);
+            int count = lists.Count;
+            if (count == 0) return new SharedList<T>();
+
+            var p = lists[--count];
+            lists.RemoveAt(count);
+            return p;
         }
-    }
 
-    static T[] GetBuffer(int size)
-    {
-        int c = bufferInfos.Length;
-        for (int i = 0; i < c; ++i)
+        public static void PutList(SharedList<T> p)
         {
-            var info = bufferInfos[i];
-            if (size <= info.bufferSize)
+            var data = p.data;
+            if (data != null)
             {
-                return info.Get();
+                int c = p.size;
+                p.data = null;
+                p.size = 0;
+                PutBuffer(data, c);
             }
         }
-        return new T[size];
-    }
 
-    static void PutBuffer(T[] p, int count)
-    {
-        if (p == null) return;
-        for (int i = 0; i < count; ++i)
+        static T[] GetBuffer(int size)
         {
-            p[i] = default;
-        }
-        int size = p.Length;
-        int c = bufferInfos.Length;
-        for (int i = 0; i < c; ++i)
-        {
-            var info = bufferInfos[i];
-            if (size == info.bufferSize)
+            int c = bufferInfos.Length;
+            for (int i = 0; i < c; ++i)
             {
-                info.Put(p);
-                break;
+                var info = bufferInfos[i];
+                if (size <= info.bufferSize)
+                {
+                    return info.Get();
+                }
+            }
+            return new T[size];
+        }
+
+        static void PutBuffer(T[] p, int count)
+        {
+            if (p == null) return;
+            for (int i = 0; i < count; ++i)
+            {
+                p[i] = default;
+            }
+            int size = p.Length;
+            int c = bufferInfos.Length;
+            for (int i = 0; i < c; ++i)
+            {
+                var info = bufferInfos[i];
+                if (size == info.bufferSize)
+                {
+                    info.Put(p);
+                    break;
+                }
             }
         }
-    }
 
-    void AllocateMore()
-    {
-        T[] newList;
-        if (data != null)
+        void AllocateMore()
         {
-            newList = GetBuffer(Mathf.Max(data.Length << 1, cMinSize));
-            if (size > 0) data.CopyTo(newList, 0);
-            PutBuffer(data, size);
+            T[] newList;
+            if (data != null)
+            {
+                newList = GetBuffer(Mathf.Max(data.Length << 1, cMinSize));
+                if (size > 0) data.CopyTo(newList, 0);
+                PutBuffer(data, size);
+            }
+            else
+            {
+                newList = GetBuffer(cMinSize);
+            }
+            data = newList;
         }
-        else
+
+        public void Add(T item)
         {
-            newList = GetBuffer(cMinSize);
+            if (data == null || size == data.Length) AllocateMore();
+            data[size++] = item;
         }
-        data = newList;
-    }
 
-    public void Add(T item)
-    {
-        if (data == null || size == data.Length) AllocateMore();
-        data[size++] = item;
+        public T[] data;
+        public int size;
     }
-
-    public T[] data;
-    public int size;
 }

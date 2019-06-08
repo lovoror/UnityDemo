@@ -1,29 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class UIDrawCall : MonoBehaviour
+namespace MiniNGUI
 {
-    const int geomSize = 1000;
-    public static List<Vector3> verts = new List<Vector3>(geomSize);
-    public Material mMaterial;
-    public Texture mTexture;
-    public Shader mShader;
-    Mesh mMesh;
-    MeshFilter mMeshFilter;
-    public MeshRenderer mRenderer;
-    
-    public void UpdateGeometry()
+    public class UIDrawCall : MonoBehaviour
     {
-        if (mMesh == null)
+        const int geomSize = 1000;
+        public static List<Vector3> verts = new List<Vector3>(geomSize);
+        public Material mMaterial;
+        public Texture mTexture;
+        public Shader mShader;
+        Mesh mMesh;
+        MeshFilter mMeshFilter;
+        public MeshRenderer mRenderer;
+
+        public void UpdateGeometry()
         {
-            mMesh = new Mesh
+            if (mMesh == null)
             {
-                hideFlags = HideFlags.DontSave,
-                name = (mMaterial != null)?"[NGUI]" + mMaterial.name : "[NGUI] Mesh"
-            };
-            mMesh.MarkDynamic();
+                mMesh = new Mesh
+                {
+                    hideFlags = HideFlags.DontSave,
+                    name = (mMaterial != null) ? "[NGUI]" + mMaterial.name : "[NGUI] Mesh"
+                };
+                mMesh.MarkDynamic();
+            }
         }
+
     }
 
 }
