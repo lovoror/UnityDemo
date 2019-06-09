@@ -183,7 +183,7 @@ public class UICardMove : MonoBehaviour
     {
         for (int i = 0; i < cards.Count; i++)
         {
-            DestroyObject(cards[i]);
+            Destroy(cards[i]);
         }
         cards.Clear();
         cardInFocalEvents.Clear();
@@ -641,33 +641,30 @@ public class UICardMove : MonoBehaviour
                 float after = 0.0f;
                 float delta = RealTime.deltaTime;
                 float difference = 0.0f;
-
-                if (springDirection == SpringDirection.Spring_To_Min)
+                switch (springDirection)
                 {
-                    target = leftMoveSpringThresholdFrameTime;
-                    before = cardPlayAniNowTime[0];
+                    case SpringDirection.Spring_To_Min:
+                        target = leftMoveSpringThresholdFrameTime;
+                        before = cardPlayAniNowTime[0];
+                        break;
+                    case SpringDirection.Spring_To_Max:
+                        target = rightMoveSpringThresholdFrameTime;
+                        before = cardPlayAniNowTime[cardPlayAniNowTime.Length - 1];
+                        break;
+                    case SpringDirection.Spring_To_Mid:
+                        target = middleMoveSpringThresholdFrameTime + (cards.Count - 2) * frameStepTime / 2.0f;
+                        before = cardPlayAniNowTime[cardPlayAniNowTime.Length - 1];
+                        break;
+                    case SpringDirection.Spring_To_Select:
+                        if (nCenterIndex < 0 || cardPlayAniNowTime.Length - nCenterIndex < 0)
+                        {
+                            Debug.LogError("The index of choices exceeds the total");
+                            return;
+                        }
+                        target = middleMoveSpringThresholdFrameTime;
+                        before = cardPlayAniNowTime[cardPlayAniNowTime.Length - nCenterIndex];
+                        break;
                 }
-                else if (springDirection == SpringDirection.Spring_To_Max)
-                {
-                    target = rightMoveSpringThresholdFrameTime;
-                    before = cardPlayAniNowTime[cardPlayAniNowTime.Length - 1];
-                }
-                else if (springDirection == SpringDirection.Spring_To_Mid)
-                {
-                    target = middleMoveSpringThresholdFrameTime + (cards.Count - 2) * frameStepTime / 2.0f;
-                    before = cardPlayAniNowTime[cardPlayAniNowTime.Length - 1];
-                }
-                else if (springDirection == SpringDirection.Spring_To_Select)
-                {
-                    if (nCenterIndex < 0 || cardPlayAniNowTime.Length - nCenterIndex < 0)
-                    {
-                        Debug.LogError("The index of choices exceeds the total");
-                        return;
-                    }
-                    target = middleMoveSpringThresholdFrameTime;
-                    before = cardPlayAniNowTime[cardPlayAniNowTime.Length - nCenterIndex];
-                }
-
                 if (bUseFirstShowSpring)
                 {
                     if (bFirstShowSpringMoving)
@@ -804,14 +801,14 @@ public class UICardMove : MonoBehaviour
                 "oncomplete",
                 "OnFirstShowSpringComplete",
                 "onupdatetarget",
-                base.gameObject,
+                gameObject,
                 "easetype",
                 iTweenEaseType,
                 "name",
                 "FirstShowSpring"
             });
-        iTween.StopByName(this.gameObject, "FirstShowSpring");
-        iTween.ValueTo(base.gameObject, args);
+        iTween.StopByName(gameObject, "FirstShowSpring");
+        iTween.ValueTo(gameObject, args);
     }
 
     private void OnFirstShowSpringComplete()
