@@ -1,0 +1,36 @@
+{"frames": {
+
+"CYDZ.png":
+{
+	"frame": {"x":0,"y":168,"w":512,"h":168},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":512,"h":168},
+	"sourceSize": {"w":512,"h":168}
+},
+"caoxueyang.png":
+{
+	"frame": {"x":0,"y":0,"w":512,"h":168},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":512,"h":168},
+	"sourceSize": {"w":512,"h":168}
+},
+"chenyue.png":
+{
+	"frame": {"x":0,"y":336,"w":508,"h":168},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":508,"h":168},
+	"sourceSize": {"w":512,"h":168}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "HeroHeadHorizontally5.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":512},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:31abf378c5862a88d5df769b496d9a5b:6214376f394193b4e07a5ad4d4a27864:b33d9903159a059fa2c472e0d0bfb223$"
+}
+}

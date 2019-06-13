@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5e216acc-5c68-43c0-b0da-c2d75d1db944" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Assets/NGUI/Scripts/Interaction/UIScrollView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/NGUI/Scripts/Interaction/UIScrollView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Plugins/Pixelplacement/iTween/iTween.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Plugins/Pixelplacement/iTween/iTween.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/UICardMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/UICardMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Assets/Scripts/UICardScrollView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assets/Scripts/UICardScrollView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/2.0/machine.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/2.0/settings.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/2.0/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/4.0/machine.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/4.0/settings.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/4.0/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/4.5/machine.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/4.5/settings.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/4.5/web.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/browscap.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MonoBleedingEdge/etc/mono/mconfig/config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityCrashHandler64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/Assembly-CSharp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/Ionic.Zip.Unity.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/KdTreeLib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/Mono.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/Poly2Tri.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/ProBuilderCore-Unity5.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/ProBuilderMeshOps-Unity5.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.ComponentModel.Composition.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Configuration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Data.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Diagnostics.StackTrace.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Drawing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.EnterpriseServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Globalization.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.IO.Compression.FileSystem.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.IO.Compression.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Net.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Numerics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Runtime.Serialization.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Runtime.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.ServiceModel.Internals.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Transactions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Xml.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Xml.XPath.XDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/System.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/Unity.Analytics.DataPrivacy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/Unity.TextMeshPro.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.AIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.AIModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ARModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ARModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.AccessibilityModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.AccessibilityModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.AnimationModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.AnimationModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.AssetBundleModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.AssetBundleModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.AudioModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.AudioModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.BaselibModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.BaselibModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ClothModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ClothModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ClusterInputModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ClusterInputModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ClusterRendererModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ClusterRendererModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.CoreModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.CoreModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.CrashReportingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.CrashReportingModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.DirectorModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.DirectorModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.FileSystemHttpModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.FileSystemHttpModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.GameCenterModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.GameCenterModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.GridModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.GridModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.HotReloadModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.HotReloadModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.IMGUIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.IMGUIModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ImageConversionModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ImageConversionModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.InputModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.InputModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.JSONSerializeModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.JSONSerializeModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.LocalizationModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.LocalizationModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.Networking.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ParticleSystemModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ParticleSystemModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.PerformanceReportingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.PerformanceReportingModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.Physics2DModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.Physics2DModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.PhysicsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.PhysicsModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ProfilerModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ProfilerModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ScreenCaptureModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.ScreenCaptureModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.SharedInternalsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.SharedInternalsModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.SpatialTracking.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.SpriteMaskModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.SpriteMaskModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.SpriteShapeModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.SpriteShapeModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.StreamingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.StreamingModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.StyleSheetsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.StyleSheetsModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.SubstanceModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.SubstanceModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TLSModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TLSModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TerrainModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TerrainModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TerrainPhysicsModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TextCoreModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TextCoreModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TextRenderingModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TextRenderingModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TilemapModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TilemapModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.Timeline.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TimelineModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.TimelineModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UIElementsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UIElementsModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UIModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UIModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UNETModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UNETModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UmbraModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UmbraModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityAnalyticsModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityConnectModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityConnectModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityTestProtocolModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityWebRequestAudioModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityWebRequestModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityWebRequestModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityWebRequestTextureModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.UnityWebRequestWWWModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.VFXModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.VFXModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.VRModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.VRModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.VehiclesModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.VehiclesModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.VideoModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.VideoModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.WindModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.WindModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.XRModule.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.XRModule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/UnityEngine.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/mscorlib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/netstandard.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Managed/pb_Stl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Resources/unity default resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/Resources/unity_builtin_extra" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/StreamingAssets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/StreamingAssets.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/models/face.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/models/face.bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/models/test.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/models/test.bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/prefabs/gameobject.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/prefabs/gameobject.bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/prefabs/image (2).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/prefabs/image (2).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/prefabs/image (3).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/prefabs/image (3).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/prefabs/image.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/prefabs/image.bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/prefabs/text.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/prefabs/text.bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/1 .bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/1 .bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/2.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/2.bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (0).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (0).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (1).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (1).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (10).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (10).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (11).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (11).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (12).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (12).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (13).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (13).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (14).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (14).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (15).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (15).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (2).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (2).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (3).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (3).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (4).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (4).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (5).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (5).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (6).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (6).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (7).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (7).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (8).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (8).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (9).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3 - 副本 (9).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/3.bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (0).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (0).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (1).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (1).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (10).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (10).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (11).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (11).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (12).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (12).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (13).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (13).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (14).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (14).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (15).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (15).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (2).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (2).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (3).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (3).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (4).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (4).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (5).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (5).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (6).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (6).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (7).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (7).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (8).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (8).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (9).bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4 - 副本 (9).bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/4.bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/main_rocker_bg.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/main_rocker_bg.bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/main_rocker_fore.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/assets/texture/main_rocker_fore.bytes.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/encrypted/tanks/models" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/encrypted/tanks/models.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/encrypted/tanks/prefabs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/encrypted/tanks/prefabs.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/maps/sample/samplescene" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/maps/sample/samplescene.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/maps/variants/assets.hd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/maps/variants/assets.hd.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/maps/variants/assets.sd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/maps/variants/assets.sd.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/maps/variants/variantscene" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/maps/variants/variantscene.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/models/green" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/models/green.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/models/plane" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/models/plane.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/models/red" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/StreamingAssets/models/red.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/app.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/boot.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/globalgamemanagers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/globalgamemanagers.assets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/level0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/resources.assets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/resources.assets.resS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/sharedassets0.assets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityDemo_Data/sharedassets0.assets.resS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UnityPlayer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WinPixEventRuntime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/zentia/liyanfeng/UnityPlayerActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jcenter</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/zentia/liyanfeng/UnityPlayerActivity.java" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1065" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="UnityDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnityDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnityDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnityDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnityDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnityDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnityDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnityDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnityDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnityDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnityDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnityDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnityDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnityDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zentia" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnityDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnityDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zentia" type="462c0819:PsiDirectoryNode" />
+              <item name="liyanfeng" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="F:/SourceCode/xx/xxprj/client/Archive/xxsyAndroid" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5e216acc-5c68-43c0-b0da-c2d75d1db944" name="Default Changelist" comment="" />
+      <created>1560060800695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560060800695</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1065" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24093817" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="TODO" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Build" order="4" visible="true" weight="0.34586465" />
+      <window_info anchor="bottom" id="Run" order="5" />
+      <window_info anchor="bottom" id="Debug" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Gradle" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Assistant" order="4" visible="true" weight="0.23560767" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zentia/liyanfeng/UnityPlayerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="54" lean-forward="true" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

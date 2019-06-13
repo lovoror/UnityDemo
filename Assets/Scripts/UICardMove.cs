@@ -92,7 +92,56 @@ public class UICardMove : MonoBehaviour
     private bool m_bSpringing = false;
 
     private Dictionary<int, InFocalInfo> cardInFocalEvents = new Dictionary<int, InFocalInfo>();
-    public AnimationClip m_AnimationClip;
+    public CurveClipData m_curveClipData;
+#if UNITY_EDITOR
+    [EasyButtons.Button("导出Animation")]
+    private void Export()
+    {
+        m_curveClipData = ExportAnimationCurve.Execute(gameObject);
+    }
+#endif
+    private Vector2 GetBound(GameObject obj)
+    {
+        var widgets = obj.GetComponentsInChildren<UIWidget>();
+        Vector2 top = Vector2.zero;
+        Vector2 bottom = Vector2.zero;
+        for (int i = 1; i < widgets.Length; i++)
+        {
+            var widget = widgets[i];
+            Vector3 toptmp = widget.transform.position;
+            toptmp.y += widget.height / 2;
+            if (toptmp.y > top.y)
+            {
+                top = toptmp;
+            }
+            Vector3 bottomtmp = widget.transform.position;
+            bottomtmp.y -= widget.height / 2;
+            if (bottomtmp.y < bottom.y)
+            {
+                bottom = bottomtmp;
+            }
+        }
+        return new Vector2(top.y, bottom.y);
+    }
+    private void Calculation()
+    {
+        var panel = GetComponent<UIPanel>();
+        if (!panel)
+            return;
+        var size = panel.GetViewSize();
+        var nexttime = (rightMoveSpringThresholdFrame + frameStep) / frameRate;
+        if (nexttime > allFrameTime)
+            return;
+        var card = cards[0];
+        m_curveClipData.Sample(card, nexttime);
+        var bound = GetBound(card);
+        if (bound.x + card.transform.localPosition.y > size.y / 2)
+        {
+            return;
+        }
+        rightMoveSpringThresholdFrame += frameStep;
+    }
+    public bool m_autoAdjust;
     private List<UIPanel> panelsCache = new List<UIPanel>();
 
     private float allFrameTime = 0.0f;
@@ -242,6 +291,10 @@ public class UICardMove : MonoBehaviour
         cardPlayAniNowTime = new float[cards.Count];
 
         allFrameTime = allFrame / frameRate;
+        if (m_autoAdjust)
+        {
+            Calculation();
+        }
         rightMoveSpringThresholdFrameTime = rightMoveSpringThresholdFrame / frameRate;
         rightMoveThresholdFrameTime = rightMoveThresholdFrame / frameRate;
         leftMoveSpringThresholdFrameTime = leftMoveSpringThresholdFrame / frameRate;
@@ -478,15 +531,15 @@ public class UICardMove : MonoBehaviour
 
                 if (cardPlayAniNowTime[i] > allFrameTime)
                 {
-                    SetSampleAnimation(m_AnimationClip, cards[i], allFrameTime);
+                    SetSampleAnimation(m_curveClipData, cards[i], allFrameTime);
                 }
                 else if (cardPlayAniNowTime[i] < 0.0f)
                 {
-                    SetSampleAnimation(m_AnimationClip, cards[i], 0.0f);
+                    SetSampleAnimation(m_curveClipData, cards[i], 0.0f);
                 }
                 else
                 {
-                    SetSampleAnimation(m_AnimationClip, cards[i], nowTime);
+                    SetSampleAnimation(m_curveClipData, cards[i], nowTime);
                 }
 
                 if (outRangeDeactive)
@@ -546,15 +599,15 @@ public class UICardMove : MonoBehaviour
 
                 if (cardPlayAniNowTime[i] > allFrameTime)
                 {
-                    SetSampleAnimation(m_AnimationClip, cards[i], allFrameTime);
+                    SetSampleAnimation(m_curveClipData, cards[i], allFrameTime);
                 }
                 else if (cardPlayAniNowTime[i] < 0.0f)
                 {
-                    SetSampleAnimation(m_AnimationClip, cards[i], 0.0f);
+                    SetSampleAnimation(m_curveClipData, cards[i], 0.0f);
                 }
                 else
                 {
-                    SetSampleAnimation(m_AnimationClip, cards[i], nowTime);
+                    SetSampleAnimation(m_curveClipData, cards[i], nowTime);
                 }
 
                 if (outRangeDeactive)
@@ -716,15 +769,15 @@ public class UICardMove : MonoBehaviour
 
                     if (cardPlayAniNowTime[i] > allFrameTime)
                     {
-                        SetSampleAnimation(m_AnimationClip, cards[i], allFrameTime);
+                        SetSampleAnimation(m_curveClipData, cards[i], allFrameTime);
                     }
                     else if (cardPlayAniNowTime[i] < 0.0f)
                     {
-                        SetSampleAnimation(m_AnimationClip, cards[i], 0.0f);
+                        SetSampleAnimation(m_curveClipData, cards[i], 0.0f);
                     }
                     else
                     {
-                        SetSampleAnimation(m_AnimationClip, cards[i], cardPlayAniNowTime[i]);
+                        SetSampleAnimation(m_curveClipData, cards[i], cardPlayAniNowTime[i]);
                     }
 
                     if (outRangeDeactive)
@@ -865,15 +918,15 @@ public class UICardMove : MonoBehaviour
 
             if (cardPlayAniNowTime[i] > allFrameTime)
             {
-                SetSampleAnimation(m_AnimationClip, cards[i], allFrameTime);
+                SetSampleAnimation(m_curveClipData, cards[i], allFrameTime);
             }
             else if (cardPlayAniNowTime[i] < 0.0f)
             {
-                SetSampleAnimation(m_AnimationClip, cards[i], 0.0f);
+                SetSampleAnimation(m_curveClipData, cards[i], 0.0f);
             }
             else
             {
-                SetSampleAnimation(m_AnimationClip, cards[i], nowTime);
+                SetSampleAnimation(m_curveClipData, cards[i], nowTime);
             }
 
             if (outRangeDeactive)
@@ -900,9 +953,9 @@ public class UICardMove : MonoBehaviour
         EnableSpring(true);
     }
 
-    void SetSampleAnimation(AnimationClip clip, GameObject go, float time)
+    void SetSampleAnimation(CurveClipData curveClipData, GameObject go, float time)
     {
-        clip.SampleAnimation(go, time);
+        curveClipData.Sample(go, time);
 
         if (cardInFocalEvents.ContainsKey(go.GetHashCode()))
         {
