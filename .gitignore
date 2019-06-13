@@ -7,3 +7,7 @@
 /Assembly-CSharp-Editor.csproj
 /Assembly-CSharp.csproj
 /*.csproj
+/*.sln
+/*.user
+/Assembly-CSharp-Editor-firstpass.csproj
+/Assembly-CSharp-firstpass.csproj
