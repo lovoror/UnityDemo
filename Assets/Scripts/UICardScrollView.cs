@@ -1,15 +1,14 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class UICardScrollView : UIScrollView
 {
-    public UICardMove cardMove = null;
+    public UICardMove cardMove;
 
     public override void Awake()
     {
         base.Awake();
 
-        base.restrictWithinPanel = true;
+        restrictWithinPanel = true;
     }
 
     public override void MoveRelative(Vector3 relative)

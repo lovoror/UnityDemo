@@ -316,7 +316,7 @@ public class UIScrollView : MonoBehaviour
 	/// Cache the transform and the panel.
 	/// </summary>
 
-	void Awake ()
+	public virtual void Awake ()
 	{
 		mTrans = transform;
 		mPanel = GetComponent<UIPanel>();
@@ -405,7 +405,7 @@ public class UIScrollView : MonoBehaviour
 	/// Restrict the scroll view's contents to be within the scroll view's bounds.
 	/// </summary>
 
-	public bool RestrictWithinBounds (bool instant, bool horizontal, bool vertical)
+	public virtual bool RestrictWithinBounds (bool instant, bool horizontal, bool vertical)
 	{
 		if (mPanel == null) return false;
 
@@ -445,7 +445,7 @@ public class UIScrollView : MonoBehaviour
 	/// Disable the spring movement.
 	/// </summary>
 
-	public void DisableSpring ()
+	public virtual void DisableSpring ()
 	{
 		SpringPanel sp = GetComponent<SpringPanel>();
 		if (sp != null) sp.enabled = false;

@@ -77,7 +77,7 @@ public class UICardMove : MonoBehaviour
     public float springStrength = 10.0f;
     public bool outRangeDeactive = false;
 
-    [SLua.DoNotToLua]
+    [DoNotToLua]
     public bool fixIpad = false;
     public List<GameObject> cards = new List<GameObject>();
 
@@ -92,7 +92,7 @@ public class UICardMove : MonoBehaviour
     private bool m_bSpringing = false;
 
     private Dictionary<int, InFocalInfo> cardInFocalEvents = new Dictionary<int, InFocalInfo>();
-    private List<AnimationClip> clipsCache = new List<AnimationClip>();
+    public AnimationClip m_AnimationClip;
     private List<UIPanel> panelsCache = new List<UIPanel>();
 
     private float allFrameTime = 0.0f;
@@ -188,7 +188,6 @@ public class UICardMove : MonoBehaviour
         cards.Clear();
         cardInFocalEvents.Clear();
 
-        clipsCache.Clear();
         panelsCache.Clear();
 
         m_bInitProcess = false;
@@ -199,7 +198,6 @@ public class UICardMove : MonoBehaviour
     {
         cardInFocalEvents.Clear();
         cards.Clear();
-        clipsCache.Clear();
         panelsCache.Clear();
 
         m_bInitProcess = false;
@@ -257,9 +255,6 @@ public class UICardMove : MonoBehaviour
         int nActiveCardNum = 0;
         for (int i = 0; i < cards.Count; i++)
         {
-            Animation ani = cards[i].GetComponent<Animation>();
-            AnimationClip clip = ani.clip;
-            clipsCache.Add(clip);
             panelsCache.Add(cards[i].gameObject.GetComponent<UIPanel>());
 
             float initTime = (i - cards.Count + 1) * frameStep / frameRate;
@@ -483,18 +478,15 @@ public class UICardMove : MonoBehaviour
 
                 if (cardPlayAniNowTime[i] > allFrameTime)
                 {
-                    //clipsCache[i].SampleAnimation(cards[i], allFrameTime);
-                    SetSampleAnimation(clipsCache[i], cards[i], allFrameTime);
+                    SetSampleAnimation(m_AnimationClip, cards[i], allFrameTime);
                 }
                 else if (cardPlayAniNowTime[i] < 0.0f)
                 {
-                    //clipsCache[i].SampleAnimation(cards[i], 0.0f);
-                    SetSampleAnimation(clipsCache[i], cards[i], 0.0f);
+                    SetSampleAnimation(m_AnimationClip, cards[i], 0.0f);
                 }
                 else
                 {
-                    //clipsCache[i].SampleAnimation(cards[i], nowTime);
-                    SetSampleAnimation(clipsCache[i], cards[i], nowTime);
+                    SetSampleAnimation(m_AnimationClip, cards[i], nowTime);
                 }
 
                 if (outRangeDeactive)
@@ -554,18 +546,15 @@ public class UICardMove : MonoBehaviour
 
                 if (cardPlayAniNowTime[i] > allFrameTime)
                 {
-                    //clipsCache[i].SampleAnimation(cards[i], allFrameTime);
-                    SetSampleAnimation(clipsCache[i], cards[i], allFrameTime);
+                    SetSampleAnimation(m_AnimationClip, cards[i], allFrameTime);
                 }
                 else if (cardPlayAniNowTime[i] < 0.0f)
                 {
-                    //clipsCache[i].SampleAnimation(cards[i], 0.0f);
-                    SetSampleAnimation(clipsCache[i], cards[i], 0.0f);
+                    SetSampleAnimation(m_AnimationClip, cards[i], 0.0f);
                 }
                 else
                 {
-                    //clipsCache[i].SampleAnimation(cards[i], nowTime);
-                    SetSampleAnimation(clipsCache[i], cards[i], nowTime);
+                    SetSampleAnimation(m_AnimationClip, cards[i], nowTime);
                 }
 
                 if (outRangeDeactive)
@@ -727,18 +716,15 @@ public class UICardMove : MonoBehaviour
 
                     if (cardPlayAniNowTime[i] > allFrameTime)
                     {
-                        //clipsCache[i].SampleAnimation(cards[i], allFrameTime);
-                        SetSampleAnimation(clipsCache[i], cards[i], allFrameTime);
+                        SetSampleAnimation(m_AnimationClip, cards[i], allFrameTime);
                     }
                     else if (cardPlayAniNowTime[i] < 0.0f)
                     {
-                        //clipsCache[i].SampleAnimation(cards[i], 0.0f);
-                        SetSampleAnimation(clipsCache[i], cards[i], 0.0f);
+                        SetSampleAnimation(m_AnimationClip, cards[i], 0.0f);
                     }
                     else
                     {
-                        //clipsCache[i].SampleAnimation(cards[i], cardPlayAniNowTime[i]);
-                        SetSampleAnimation(clipsCache[i], cards[i], cardPlayAniNowTime[i]);
+                        SetSampleAnimation(m_AnimationClip, cards[i], cardPlayAniNowTime[i]);
                     }
 
                     if (outRangeDeactive)
@@ -824,7 +810,7 @@ public class UICardMove : MonoBehaviour
 
     private void StopFirstShowSpring()
     {
-        iTween.StopByName(base.gameObject, "FirstShowSpring");
+        iTween.StopByName(gameObject, "FirstShowSpring");
 
 
         bFirstShowSpringMoving = false;
@@ -870,7 +856,6 @@ public class UICardMove : MonoBehaviour
         }
 
         int nActiveCardNum = 0;
-        //for (int i = cards.Count - 1; i >= 0; i--)
         for (int i = 0; i < cards.Count; i++)
         {
             nowTime = cardPlayAniNowTime[i];
@@ -880,18 +865,15 @@ public class UICardMove : MonoBehaviour
 
             if (cardPlayAniNowTime[i] > allFrameTime)
             {
-                //clipsCache[i].SampleAnimation(cards[i], allFrameTime);
-                SetSampleAnimation(clipsCache[i], cards[i], allFrameTime);
+                SetSampleAnimation(m_AnimationClip, cards[i], allFrameTime);
             }
             else if (cardPlayAniNowTime[i] < 0.0f)
             {
-                //clipsCache[i].SampleAnimation(cards[i], 0.0f);
-                SetSampleAnimation(clipsCache[i], cards[i], 0.0f);
+                SetSampleAnimation(m_AnimationClip, cards[i], 0.0f);
             }
             else
             {
-                //clipsCache[i].SampleAnimation(cards[i], nowTime);
-                SetSampleAnimation(clipsCache[i], cards[i], nowTime);
+                SetSampleAnimation(m_AnimationClip, cards[i], nowTime);
             }
 
             if (outRangeDeactive)

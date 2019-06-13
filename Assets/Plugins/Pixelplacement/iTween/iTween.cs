@@ -53,7 +53,7 @@ public class iTween : MonoBehaviour
 
 	//status members (made public for visual troubleshooting in the inspector):
 	public string id, type, method;
-	public iTween.EaseType easeType;
+	public EaseType easeType;
 	public float time, delay;
 	public LoopType loopType;
 	public bool isRunning,isPaused;
@@ -270,7 +270,7 @@ public class iTween : MonoBehaviour
 	/// </param>
 	public static void ValueTo(GameObject target, Hashtable args){
 		//clean args:
-		args = iTween.CleanArgs(args);
+		args = CleanArgs(args);
 		
 		if (!args.Contains("onupdate") || !args.Contains("from") || !args.Contains("to")) {
 			Debug.LogError("iTween Error: ValueTo() requires an 'onupdate' callback function and a 'from' and 'to' property.  The supplied 'onupdate' callback must accept a single argument that is the same type as the supplied 'from' and 'to' properties!");
