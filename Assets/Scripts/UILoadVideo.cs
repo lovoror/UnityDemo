@@ -57,7 +57,8 @@ public class UILoadVideo : MonoBehaviour
         {
             source.Stop();
             m_Index = 3;
-
+            var obj = Resources.Load("UIRoot");
+            Instantiate(obj);
         }
     }
     private void Update()
