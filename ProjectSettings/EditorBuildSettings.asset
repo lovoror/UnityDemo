@@ -5,7 +5,34 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Game.unity
     guid: 28b7b13cd6dc4e84cb78bdc57ea28a92
+  - enabled: 0
+    path: Assets/Scenes/Start.unity
+    guid: bf4c75f3f7e47d740aeeb3564fb16bd3
+  - enabled: 0
+    path: Assets/Scenes/Earth.unity
+    guid: ec72b9bb274011a42957698dea3548e2
+  - enabled: 0
+    path: Assets/Scenes/Main.unity
+    guid: 311bbecd6dc9de743a87ef6a99a7bb80
+  - enabled: 1
+    path: Assets/Scenes/NGUI.unity
+    guid: bc070716862c8754782fa2ad2dd1bbc7
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Ocean/Scene/Ocean_with_boat.unity
+    guid: 59daefcb031fc494a88dc471ae1fc720
+  - enabled: 0
+    path: Assets/Ocean/Scene/Ocean_with_ships_HQ.unity
+    guid: 799449e75b8942548b90173b96413631
+  - enabled: 0
+    path: Assets/Ocean/Scene/Ocean_with_ships_island.unity
+    guid: a94c874edbb2acd42a840b3a03cf962c
+  - enabled: 0
+    path: Assets/Ocean/Scene/Ocean_with_ships_mobile.unity
+    guid: 9cd1be50581fd7245be1b44e27e484b2
   m_configObjects: {}
