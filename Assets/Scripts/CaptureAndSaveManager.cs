@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -24,13 +24,6 @@ public class CaptureAndSaveManager : MonoBehaviour
     }
 
     List<Camera> cameras = null;
-
-
-#if !UNITY_ANDROID
-    CaptureAndSave snapShot = null;
-#endif
-
-
     public void ClearScreenShot()
     {
         if(tex2DMainCameraAndUICamerasSreenShot != null)
@@ -54,7 +47,7 @@ public class CaptureAndSaveManager : MonoBehaviour
         }
         catch (Exception ex)
         {
-            SimpleLogger.ERROR("CaptureAndSave", "SaveTexture(Texture2D tex2D, string path) Error: {0}", ex.Message);
+            UnityEngine.Debug.LogErrorFormat("CaptureAndSave", "SaveTexture(Texture2D tex2D, string path) Error: {0}", ex.Message);
         }
 #endif
     }
@@ -375,19 +368,7 @@ public class CaptureAndSaveManager : MonoBehaviour
     */
     public void CaptureAndSaveToAlbum(int x, int y, int width, int height)
     {
-#if !UNITY_ANDROID
-        try
-        {
-            if (snapShot != null)
-            {
-                snapShot.CaptureAndSaveToAlbum(x, y, width, height);
-            }
-        }
-        catch (Exception ex)
-        {
-            SimpleLogger.ERROR("CaptureAndSaveManager", "CaptureAndSaveToAlbum(int x, int y, int width, int height) Error: {0}", ex.Message);
-        }
-#endif
+
     }
     
 }
