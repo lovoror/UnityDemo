@@ -1,0 +1,60 @@
+{"frames": {
+
+"LWS.png":
+{
+	"frame": {"x":461,"y":1,"w":580,"h":638},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":580,"h":638},
+	"sourceSize": {"w":580,"h":638}
+},
+"LuoFeng.png":
+{
+	"frame": {"x":1,"y":687,"w":510,"h":658},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":510,"h":658},
+	"sourceSize": {"w":510,"h":658}
+},
+"QXDZ.png":
+{
+	"frame": {"x":1,"y":1347,"w":586,"h":538},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":586,"h":538},
+	"sourceSize": {"w":586,"h":538}
+},
+"SLDZcloud.png":
+{
+	"frame": {"x":513,"y":1075,"w":451,"h":213},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":451,"h":213},
+	"sourceSize": {"w":451,"h":213}
+},
+"WHDZ.png":
+{
+	"frame": {"x":513,"y":641,"w":649,"h":432},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":649,"h":432},
+	"sourceSize": {"w":649,"h":432}
+},
+"XQ.png":
+{
+	"frame": {"x":1,"y":1,"w":458,"h":684},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":458,"h":684},
+	"sourceSize": {"w":458,"h":684}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "AllPeople4.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:30a0ba760307e66ed9dc67144e176b82:c5c8a08764e08400eb56989244b361c1:f04231f313c552c170b49a52f9ea1a6a$"
+}
+}

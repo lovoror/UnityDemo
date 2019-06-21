@@ -1,0 +1,212 @@
+{"frames": {
+
+"Achievement3_01.png":
+{
+	"frame": {"x":939,"y":697,"w":51,"h":197},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":51,"h":197},
+	"sourceSize": {"w":51,"h":197}
+},
+"Achievement3_02.png":
+{
+	"frame": {"x":1,"y":559,"w":300,"h":328},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":300,"h":328},
+	"sourceSize": {"w":300,"h":328}
+},
+"Achievement3_03.png":
+{
+	"frame": {"x":485,"y":1,"w":159,"h":245},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":159,"h":245},
+	"sourceSize": {"w":159,"h":245}
+},
+"Achievement3_04.png":
+{
+	"frame": {"x":719,"y":756,"w":58,"h":102},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":102},
+	"sourceSize": {"w":58,"h":102}
+},
+"Achievement3_05.png":
+{
+	"frame": {"x":485,"y":247,"w":132,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":86},
+	"sourceSize": {"w":132,"h":86}
+},
+"Achievement3_06.png":
+{
+	"frame": {"x":482,"y":626,"w":54,"h":202},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":202},
+	"sourceSize": {"w":54,"h":202}
+},
+"Achievement3_07.png":
+{
+	"frame": {"x":289,"y":1,"w":195,"h":516},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":195,"h":516},
+	"sourceSize": {"w":195,"h":516}
+},
+"Achievement3_08.png":
+{
+	"frame": {"x":939,"y":411,"w":54,"h":285},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":285},
+	"sourceSize": {"w":54,"h":285}
+},
+"Achievement3_09.png":
+{
+	"frame": {"x":815,"y":1,"w":202,"h":409},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":202,"h":409},
+	"sourceSize": {"w":202,"h":409}
+},
+"Achievement3_10.png":
+{
+	"frame": {"x":719,"y":626,"w":90,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":90,"h":129},
+	"sourceSize": {"w":90,"h":129}
+},
+"Achievement3_11.png":
+{
+	"frame": {"x":618,"y":247,"w":37,"h":143},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":37,"h":143},
+	"sourceSize": {"w":37,"h":143}
+},
+"Achievement3_12.png":
+{
+	"frame": {"x":727,"y":867,"w":142,"h":142},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":142,"h":142},
+	"sourceSize": {"w":142,"h":142}
+},
+"Achievement3_13.png":
+{
+	"frame": {"x":1,"y":994,"w":1,"h":1},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":1,"h":1},
+	"sourceSize": {"w":1548,"h":803}
+},
+"Achievement3_14.png":
+{
+	"frame": {"x":302,"y":518,"w":512,"h":107},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":512,"h":107},
+	"sourceSize": {"w":512,"h":107}
+},
+"Achievement3_15.png":
+{
+	"frame": {"x":537,"y":626,"w":181,"h":237},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":1,"w":181,"h":237},
+	"sourceSize": {"w":181,"h":241}
+},
+"Achievement3_16.png":
+{
+	"frame": {"x":302,"y":626,"w":179,"h":241},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":2,"y":0,"w":179,"h":241},
+	"sourceSize": {"w":181,"h":241}
+},
+"Achievement3_17.png":
+{
+	"frame": {"x":731,"y":411,"w":145,"h":90},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":145,"h":90},
+	"sourceSize": {"w":145,"h":90}
+},
+"Achievement3_18.png":
+{
+	"frame": {"x":994,"y":411,"w":9,"h":493},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":9,"h":493},
+	"sourceSize": {"w":9,"h":493}
+},
+"Achievement3_19.png":
+{
+	"frame": {"x":485,"y":334,"w":132,"h":70},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":132,"h":70},
+	"sourceSize": {"w":132,"h":70}
+},
+"Achievement3_20.png":
+{
+	"frame": {"x":877,"y":411,"w":61,"h":549},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":61,"h":549},
+	"sourceSize": {"w":61,"h":549}
+},
+"Achievement3_21.png":
+{
+	"frame": {"x":815,"y":502,"w":60,"h":364},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":60,"h":364},
+	"sourceSize": {"w":60,"h":364}
+},
+"Achievement3_22.png":
+{
+	"frame": {"x":485,"y":411,"w":245,"h":87},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":245,"h":87},
+	"sourceSize": {"w":245,"h":87}
+},
+"Achievement3_23.png":
+{
+	"frame": {"x":551,"y":867,"w":175,"h":146},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":175,"h":146},
+	"sourceSize": {"w":175,"h":146}
+},
+"Achievement3_24.png":
+{
+	"frame": {"x":1,"y":888,"w":549,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":549,"h":105},
+	"sourceSize": {"w":549,"h":105}
+},
+"img12.png":
+{
+	"frame": {"x":1,"y":1,"w":287,"h":557},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":287,"h":557},
+	"sourceSize": {"w":287,"h":557}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "Achievement3.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:e4e4a614d1630bb5dd6fc95efc7632e0$"
+}
+}

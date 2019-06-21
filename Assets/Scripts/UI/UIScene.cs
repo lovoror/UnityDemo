@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+#if UNITY_EDITOR
+using UnityEditor;
+using System.Reflection;
+#endif
 
 public class UIScene : MonoBehaviour
 {
@@ -32,3 +36,30 @@ public class UIScene : MonoBehaviour
 
     }
 }
+
+#if UNITY_EDITOR
+public static class GameViewUitls
+{
+    static object gameViewSizeGroupAndroid;
+    static MethodInfo getGroup;
+    public static string displayText;
+    public static void Init()
+    {
+        var sizesType = typeof(Editor).Assembly.GetType("UnityEditor.GameViewSizes");
+        var singleType = typeof(ScriptableSingleton<>).MakeGenericType(sizesType);
+        var instanceProp = singleType.GetProperty("instance");
+        getGroup = sizesType.GetMethod("GetGroup");
+        gameViewSizeGroupAndroid = getGroup.Invoke(instanceProp.GetValue(singleType), new object[] { (int)GameViewSizeGroupType.Android });
+        var getDisplayTexts = gameViewSizeGroupAndroid.GetType().GetMethod("GetDisplayTexts");
+        var displayTexts = getDisplayTexts.Invoke(gameViewSizeGroupAndroid, null) as string[];
+        displayText = displayTexts[GetIndex()];
+    }
+    static int GetIndex()
+    {
+        var gvWndType = typeof(Editor).Assembly.GetType("UnityEditor.GameView");
+        var selectedSizeIndexProp = gvWndType.GetProperty("selectedSizeIndex", BindingFlags.Instance | BindingFlags.NonPublic);
+        var gvWnd = EditorWindow.GetWindow(gvWndType);
+        return (int)selectedSizeIndexProp.GetValue(gvWnd);
+    }
+}
+#endif

@@ -1,0 +1,92 @@
+{"frames": {
+
+"CXY.png":
+{
+	"frame": {"x":1268,"y":1233,"w":624,"h":743},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":624,"h":743},
+	"sourceSize": {"w":624,"h":743}
+},
+"CY.png":
+{
+	"frame": {"x":1262,"y":572,"w":785,"h":659},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":785,"h":659},
+	"sourceSize": {"w":785,"h":659}
+},
+"GJT.png":
+{
+	"frame": {"x":1,"y":837,"w":528,"h":822},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":528,"h":822},
+	"sourceSize": {"w":528,"h":822}
+},
+"MXYcloud.png":
+{
+	"frame": {"x":444,"y":1661,"w":822,"h":291},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":822,"h":291},
+	"sourceSize": {"w":822,"h":291}
+},
+"QJ.png":
+{
+	"frame": {"x":1,"y":1,"w":528,"h":834},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":528,"h":834},
+	"sourceSize": {"w":528,"h":834}
+},
+"QXDZcloud.png":
+{
+	"frame": {"x":531,"y":1233,"w":405,"h":406},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":405,"h":406},
+	"sourceSize": {"w":405,"h":406}
+},
+"QYQ.png":
+{
+	"frame": {"x":531,"y":1,"w":729,"h":620},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":729,"h":620},
+	"sourceSize": {"w":729,"h":620}
+},
+"TCDZ.png":
+{
+	"frame": {"x":1268,"y":1,"w":752,"h":569},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":752,"h":569},
+	"sourceSize": {"w":752,"h":569}
+},
+"XZ.png":
+{
+	"frame": {"x":531,"y":623,"w":442,"h":570},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":442,"h":570},
+	"sourceSize": {"w":442,"h":570}
+},
+"YRcloud.png":
+{
+	"frame": {"x":1,"y":1661,"w":441,"h":375},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":441,"h":375},
+	"sourceSize": {"w":441,"h":375}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "AllPeople2.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:30a0ba760307e66ed9dc67144e176b82:c5c8a08764e08400eb56989244b361c1:f04231f313c552c170b49a52f9ea1a6a$"
+}
+}

@@ -1,0 +1,100 @@
+{"frames": {
+
+"CYcloud.png":
+{
+	"frame": {"x":668,"y":934,"w":528,"h":275},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":528,"h":275},
+	"sourceSize": {"w":528,"h":275}
+},
+"DFYX.png":
+{
+	"frame": {"x":1500,"y":482,"w":538,"h":666},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":538,"h":666},
+	"sourceSize": {"w":538,"h":666}
+},
+"GZL.png":
+{
+	"frame": {"x":1,"y":1353,"w":630,"h":686},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":630,"h":686},
+	"sourceSize": {"w":630,"h":686}
+},
+"MXY.png":
+{
+	"frame": {"x":814,"y":1,"w":810,"h":479},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":810,"h":479},
+	"sourceSize": {"w":810,"h":479}
+},
+"MY.png":
+{
+	"frame": {"x":814,"y":482,"w":684,"h":450},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":684,"h":450},
+	"sourceSize": {"w":684,"h":450}
+},
+"MYcloud.png":
+{
+	"frame": {"x":1626,"y":1,"w":397,"h":150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":397,"h":150},
+	"sourceSize": {"w":397,"h":150}
+},
+"PY.png":
+{
+	"frame": {"x":1,"y":696,"w":665,"h":655},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":665,"h":655},
+	"sourceSize": {"w":665,"h":655}
+},
+"SLDZ.png":
+{
+	"frame": {"x":1,"y":1,"w":811,"h":521},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":811,"h":521},
+	"sourceSize": {"w":811,"h":521}
+},
+"TCDZcloud.png":
+{
+	"frame": {"x":1,"y":524,"w":673,"h":170},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":673,"h":170},
+	"sourceSize": {"w":673,"h":170}
+},
+"YZQ.png":
+{
+	"frame": {"x":1165,"y":1211,"w":489,"h":722},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":489,"h":722},
+	"sourceSize": {"w":489,"h":722}
+},
+"ZJQ.png":
+{
+	"frame": {"x":633,"y":1353,"w":530,"h":684},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":530,"h":684},
+	"sourceSize": {"w":530,"h":684}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker ",
+	"version": "1.0",
+	"image": "AllPeople3.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:30a0ba760307e66ed9dc67144e176b82:c5c8a08764e08400eb56989244b361c1:f04231f313c552c170b49a52f9ea1a6a$"
+}
+}
